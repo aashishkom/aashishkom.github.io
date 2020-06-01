@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel = "stylesheet" href="style.css">
+
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class = container-1>
+    <h2>FURNITURE DELIVERY CALCULATOR</h2>
+
+                <div class = unique>
+            <select onchange = "location = this.value" id = "choices">
+                <option></option>
+                <option value="resteraunt.html">Resteraunts</option>
+                <option value="food.html">Food Delivery</option>
+                <option value="room.html">Hotel Room Service</option>
+                <option value="house.html">Hotel HouseKeeping</option>
+                <option value="delivery.html">Furniture/Applicance Delivery</option>
+                <option value="plumber.html">Plumber/HandyMan</option>
+                <option value="haircut.html">Haircut/Salon</option>
+                <option value="massage.html">Massage</option>
+                <option value="taxi.html">Taxi/Limo Driver</option>
+                <option value="shuttle.html">Shuttle Driver</option>
+                <option value="tour.html">Tour Guide</option>
+            </select>
+        </div>
+        
+            <div class ="element" id = "element-1">
+        <h3 id = "head1" class="label"> ENTER FURNITURE COST</h3>
+        <input type = "text" id="type1" class="box">
+        <button class="sizee" id="size1" onclick="together()">ENTER</button>
+        <label id= "checker" style= "color: red; visibility: hidden;">Invalid Entry</label>
+    </div>
+            <div class="element" id = "element-2">
+        <h3 id= "head2" class="label">TIP PERCENTAGE</h3>
+        <input type = "text" id="type2" class="box" value = 15>
+        <button class="sizee"id="size2" onclick="together()">ENTER</button>
+        <label id = "checker-1" style= "color: red; visibility: hidden;">Invalid Entry</label>
+    </div>
+        <div class="element" id = "element-3" >
+        <h3 id = "head3" class="label">TIP AMOUNT</h3>
+        <input type = "text" id="type3" class="box">
+        <br>
+        <div class = "element" id = "squares">
+        </div> 
+        <br>
+        <!-- <label id = "tipper" style="color: black;">Tip:</label> -->
+        <!-- <button class="sizee" id="size3" onclick="totalCost()">ENTER</button>   -->
+    </div>
+        <div class="element" id = "element-4">
+        <h3 id = "head4" class="label">TOTAL COST</h3>
+        <input type = "text" id="type4" class="box">
+        <!-- <button class="sizee" id="size4">ENTER</button> -->
+    </div>
+    </div>
+    <script src = "scriptTRY.js"></script>
+    <!-- <script type="text/javascript">
+        window.onload = function(){
+            location.href=document.getElementById("choices").value;
+        }       
+    </script> -->
+</body>
+</html>
